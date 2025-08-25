@@ -7,6 +7,9 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
+  'mailto: d.chen@live.com': {
+    name: 'contact',
+  },
 }
 
 export function Navbar() {
