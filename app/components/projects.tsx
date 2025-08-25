@@ -2,19 +2,22 @@ import Link from 'next/link'
 import { getAllProjects } from 'app/project/projectService'
 import Image from 'next/image'
 import { ArrowIcon } from './arrow-icon'
+import React from 'react'
 
 export function Projects() {
   const allProjects = getAllProjects()
 
   return (
-    <ul>
-      {allProjects.map((project, i) => (
+    <>
+    {
+      allProjects.map((project, i) => (
         <Link
+          key={i}
           href={project.projectUrl}
           target='_blank'
           rel='noopener noreferrer'
         >
-          <li key={i} className='mb-8 flex md:flex-nowrap flex-wrap gap-6' >
+          <div className='mb-8 flex md:flex-nowrap flex-wrap gap-6' >
             <div className='md:w-1/3 w-full'>
               <Image
                 src={project.imageUrl}
@@ -35,14 +38,15 @@ export function Projects() {
               <p>{project.summary}</p>
               <div className='mt-4'>
                 {project.technologies.map((tech, i) => (
-                  <span className='mr-2 rounded-lg bg-red-100 px-2 py-1'>{tech}</span>
-                  ))}
+                  <span key={i} className='mr-2 rounded-lg bg-red-100 px-2 py-1'>{tech}</span>
+                ))}
               </div>
             </div>
             <div />
-          </li>
+          </div>
         </Link>
-      ))}
-    </ul>
+      ))
+    }
+    </>
   )
 }
