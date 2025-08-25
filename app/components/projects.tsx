@@ -29,7 +29,7 @@ export function Projects() {
             </div>
             <div className='md:w-2/3 w-full'>
               <span
-                className="flex gap-2 items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+                className="flex gap-2 items-center transition-all hover:text-neutral-800"
               >
                 <h2 className="h-7 font-semibold">{project.title}</h2>
                 <ArrowIcon />
