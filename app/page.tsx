@@ -7,10 +7,16 @@ export default function Page() {
         <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
           Daniel Chen
         </h1>
+
+
         <p className="mb-4">
           Hi 👋 My name is Daniel, I am a Professional Full-Stack Engineer with also a bit of experience with Machine Learning.
           <br /><br />
+          In 2025 I want to learn as much as I possibly can about the field of developing Software. I have created this website so I can document my journey and learnings.
         </p>
+
+        <p></p>
+
         <h2>My Favourite Technologies:</h2>
         Frontend - Angular, Next JS
         <br />
