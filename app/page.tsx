@@ -32,7 +32,8 @@ export default function Page() {
       <section>
         <br/>
         <h2 className='mb-4 text-lg font-semibold'>Latest Posts</h2>
-        <BlogPosts/>
+        Coming Soon!
+        {/* <BlogPosts/> */}
       </section>
     </>
   )
