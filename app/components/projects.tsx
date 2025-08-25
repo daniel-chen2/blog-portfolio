@@ -14,7 +14,7 @@ export function Projects() {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <li key={i} className='mb-4 flex gap-6' >
+          <li key={i} className='mb-8 flex gap-6' >
             <div className='w-1/3'>
               <Image
                 src={project.imageUrl}
@@ -33,6 +33,11 @@ export function Projects() {
               </span>
 
               <p>{project.summary}</p>
+              <div className='mt-4'>
+                {project.technologies.map((tech, i) => (
+                  <span className='mr-2 rounded-lg bg-red-100 px-2 py-1'>{tech}</span>
+                  ))}
+              </div>
             </div>
             <div />
           </li>
