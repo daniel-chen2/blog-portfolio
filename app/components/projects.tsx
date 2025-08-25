@@ -14,8 +14,8 @@ export function Projects() {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <li key={i} className='mb-8 flex gap-6' >
-            <div className='w-1/3'>
+          <li key={i} className='mb-8 flex md:flex-nowrap flex-wrap gap-6' >
+            <div className='md:w-1/3 w-full'>
               <Image
                 src={project.imageUrl}
                 alt=''
@@ -24,7 +24,7 @@ export function Projects() {
               >
               </Image>
             </div>
-            <div className='w-2/3'>
+            <div className='md:w-2/3 w-full'>
               <span
                 className="flex gap-2 items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
               >
